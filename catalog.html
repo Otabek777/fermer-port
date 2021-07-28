@@ -15,47 +15,76 @@
 <body>
     <!-- Header -->
     <header class="header">
-        <div class="container">
-            <div class="header__top">
-                <ul>
-                    <li>
-                        <a href="#">Каталог объявлений</a>
-                    </li>
-                    <li>
-                        <a href="#">Правила размещения</a>
-                    </li>
-                    <li>
-                        <a href="#">О платных опциях</a>
-                    </li>
-                    <li>
-                        <a href="#">Комментарии к объявлениям</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="header__bottom">
-                <a href="#" class="header__logo">
-                    <img src="img/logo.svg" alt="">
-                </a>
-                <div class="header__burgir">
-                    <div class="burgir">
-                        <span></span>
-                        <span></span>
+        <div class="header__fixed">
+            <div class="container">
+                <div class="header__top">
+                    <ul>
+                        <li>
+                            <a href="#">Каталог объявлений</a>
+                        </li>
+                        <li>
+                            <a href="#">Правила размещения</a>
+                        </li>
+                        <li>
+                            <a href="#">О платных опциях</a>
+                        </li>
+                        <li>
+                            <a href="#">Комментарии к объявлениям</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="header__bottom">
+                    <a href="#" class="header__logo">
+                        <img src="img/logo.svg" alt="">
+                    </a>
+                    <div class="header__burgir">
+                        <div class="burgir">
+                            <span></span>
+                            <span></span>
+                        </div>
+                        <p>Категории</p>
                     </div>
-                    <p>Категории</p>
-                </div>
-                <div class="header__search">
-                    <input type="text" placeholder="Поиск среди 1 200 316 объявлений">
-                    <button><img src="img/search.svg" alt=""> Найти</button>
-                </div>
-                <div class="header__btn">
-                    <a href="#">Разместить объявление</a>
-                </div>
-                <div class="header__user">
-                    <a href="#">Войти</a>
+                    <div class="header__search">
+                        <input type="text" placeholder="Поиск среди 1 200 316 объявлений">
+                        <button><img src="img/search.svg" alt=""> <p>Найти</p></button>
+                    </div>
+                    <div class="header__city">
+                        <p>Регион объявлений <a href="#">Новосибирск</a></p>
+                    </div>
+                    <div class="header__btn">
+                        <a href="#">Разместить объявление</a>
+                    </div>
+                    <div class="header__user">
+                        <a href="#">Войти</a>
+                    </div>
                 </div>
             </div>
         </div>
     </header>
+    <div class="mobile-menu">
+        <div class="menu__box">
+            <div class="menu__items">
+                <div class="catalog-btn">
+                    <span></span>
+                    <span></span>
+                    <p>Категории</p>
+                </div>
+            </div>
+            <div class="menu__items">
+                <div class="add-btn">
+                    <img src="img/plus.svg" alt="">
+                    <p>Разместить</p>
+                    <p></p>
+                </div>
+            </div>
+            <div class="menu__items">
+                <div class="user-btn">
+                    <img src="img/user.svg" alt="">
+                    <p>Профиль</p>
+                </div>
+            </div>
+        </div>
+    </div>
 
     <!-- Main -->
     <main class="main">
@@ -380,5 +409,13 @@
     <script src="js/jquery.min.js"></script>
     <script src="slick-1.8.1/slick/slick.min.js"></script>
     <script src="js/main.js"></script>
+    <script>
+        const asideLi = document.querySelectorAll('.catalog__aside li p');
+        for(let i = 0; i < asideLi.length; i++) {
+            asideLi[i].addEventListener('click', function() {
+                this.classList.toggle('active');
+            });
+        };
+    </script>
 </body>
 </html>
