@@ -5,3 +5,12 @@ $(window).scroll(function(){
         $('.header__fixed').removeClass('active');
     }
 });
+
+document.querySelector('.header__burgir').addEventListener('click', function() {
+    this.classList.toggle('active');
+    document.querySelector('.catalog_menu').classList.toggle('active');
+});
+document.querySelector('.catalog-btn').addEventListener('click', function() {
+    this.classList.toggle('active');
+    document.querySelector('.catalog_menu').classList.toggle('active');
+});
