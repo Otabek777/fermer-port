@@ -351,6 +351,7 @@ ul,ol {
     top: 17px;
     right: 20px;
     z-index: 2;
+    cursor: pointer;
 }
 .catalog_menu__ul {
     margin-top: 30px;
@@ -368,6 +369,7 @@ ul,ol {
         line-height: 120%;
         color: #333333;
         padding: 12px 10px 13px 16px;
+        cursor: pointer;
         a {
             font-weight: normal;
             font-size: 19px;
@@ -409,6 +411,7 @@ ul,ol {
     margin-bottom: 30px;
     img {
         margin-right: 15px;
+        cursor: pointer;
     }
     h6 {
         font-weight: 600;
