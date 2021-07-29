@@ -39,4 +39,5 @@ catalogClose.addEventListener('click', function() {
     };
     document.querySelector('.catalog_menu').classList.remove('active');
     document.querySelector('.catalog-btn').classList.remove('active');
+    document.querySelector('.header__burgir').classList.remove('active');
 });
