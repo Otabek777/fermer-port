@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title></title>
+</head>
+<body>
+    <!-- Header -->
+    <div class="admin_header">
+        <div class="admin_header_fixed">
+            <div class="container">
+                <div class="admin_header_box">
+                    <a href="#" class="back">
+                        <img src="img/admin-back.svg" alt="">
+                        <p>Вернуться на сайт</p>
+                    </a>
+                    <ul class="admin_header__nav">
+                        <li>
+                            <a href="#">Страницы</a>
+                        </li>
+                        <li>
+                            <a class="active" href="#">Объявления</a>
+                        </li>
+                        <li>
+                            <a href="#">Пользователи</a>
+                        </li>
+                        <li>
+                            <a href="#">Баннера</a>
+                        </li>
+                    </ul>
+                    <div class="admin_header_right">
+                        <a href="#" class="option">
+                            <img src="img/admin-option.svg" alt="">
+                            <p>Настройки</p>
+                        </a>
+                        <a href="#" class="exit">
+                            <img src="img/admin-exit.svg" alt="">
+                            <p>Выйти</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main -->
+    <main class="main">
+        <div class="admin_panel">
+            <div class="container">
+                <div class="admin_crumbs">
+                    <a href="#">Главная</a>
+                    <p>|</p>
+                    <a href="#">Объявления</a>
+                    <p>|</p>
+                    <p>Добавить объявление</p>
+                </div>
+                <div class="admin_content">
+                    <a href="#" class="admin_back"><img src="img/back-black.svg" alt=""> <p>Назад</p></a>
+                    <h2>Новое объявление </h2>
+                    <div class="admin_new_ads_id">
+                        <p>ID: 12312391239</p>
+                    </div>
+                    <div class="admin_new_ads">
+                        <div class="left">
+                            <div class="input">
+                                <p>Добавить пользователя <span>*</span></p>
+                                <div class="select">
+                                    <select name="" id="">
+                                        <option value="">+7(___) ___-__-__</option>
+                                        <option value="">+7(___) ___-__-__</option>
+                                        <option value="">+7(___) ___-__-__</option>
+                                        <option value="">+7(___) ___-__-__</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="input">
+                                <p>ФИО</p>
+                                <input type="text" placeholder="Иван Иванович Петров">
+                            </div>
+                            <div class="input">
+                                <p>Категория <span>*</span></p>
+                                <div class="select">
+                                    <select name="" id="">
+                                        <option value="">Выберите категорию</option>
+                                        <option value="">Выберите категорию</option>
+                                        <option value="">Выберите категорию</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="input">
+                                <p>Название объявления <span>*</span></p>
+                                <input type="text" placeholder="Ваше название не более 50 символов">
+                            </div>
+                            <div class="input">
+                                <p>Цена, ₽ <span>*</span></p>
+                                <input type="text" placeholder="1000">
+                            </div>
+                            <div class="input">
+                                <p>Регион <span>*</span></p>
+                                <input type="text" placeholder="Город/поселок/село">
+                            </div>
+                            <div class="add-photo">
+                                <div class="img">
+                                    <input type="file">
+                                </div>
+                                <div class="text">
+                                    <p>Возможно добавить <br>до 5 фотографий.</p>
+                                    <p>Размер изображения до 25 Мб.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="right">
+                            <div class="input">
+                                <p>Электронная почта</p>
+                                <input type="text" placeholder="your@mail.ru">
+                            </div>
+                            <div class="input">
+                                <p>Статус</p>
+                                <div class="select">
+                                    <select name="" id="">
+                                        <option value="">Выберите статус</option>
+                                        <option value="">Выберите статус</option>
+                                        <option value="">Выберите статус</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="input">
+                                <p>Подкатегория <span>*</span></p>
+                                <div class="select">
+                                    <select name="" id="">
+                                        <option value="">Выберите подкатегорию</option>
+                                        <option value="">Выберите подкатегорию</option>
+                                        <option value="">Выберите подкатегорию</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="input">
+                                <p>Описание</p>
+                                <textarea name="" placeholder="Напишите описание" id="" cols="30" rows="10"></textarea>
+                            </div>
+                            <div class="input">
+                                <p>Комментарии для администратора</p>
+                                <textarea class="comment" name="" placeholder="Напишите комментарии" id="" cols="30" rows="10"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal__check">
+                        <input type="checkbox" id="check">
+                        <label for="check">
+                            <p>Спецразмещение</p> <img src="img/fire.svg" alt="">
+                        </label>
+                    </div>
+                    <button class="btn">Сохранить</button>
+                </div>
+            </div>
+            <div class="admin_footer">
+                <div class="container">
+                    <div class="admin_footer__box">
+                        <div class="left">
+                            <p>Kontur CMS v.1.0</p>
+                        </div>
+                        <div class="center">
+                            <img src="img/Kontur-silver.svg" alt="">
+                        </div>
+                        <div class="right">
+                            <p>Служба поддержки:  (383) 255-33-33</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/SmoothScroll.js"></script>
+    <script src="slick-1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+    </script>
+</body>
+</html>

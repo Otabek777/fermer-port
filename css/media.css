@@ -261,7 +261,7 @@
     }
     .suggestions__wrap {
         padding-right: 0px;
-        padding-left: 10px;
+        padding-left: 8px;
     }
     .suggestions__item .img {
         min-height: 115px;
@@ -422,6 +422,10 @@
         line-height: 120%;
         margin-bottom: 14px;
     }
+    .user-panel-add h2 {
+        font-size: 28px;
+        line-height: 38px;
+    }
     .user-panel-add__box {
         flex-direction: column;
         margin-bottom: 24px;
@@ -457,6 +461,8 @@
     }
     .user-panel-add__box .right input, .user-panel-add__box .right select {
         height: 48px;
+        font-size: 16px;
+        line-height: 120%;
     }
     .user__box {
         flex-direction: column;
@@ -613,6 +619,46 @@
     .footer__bottom .left {
         margin-bottom: 33px;
     }
+    .footer__link {
+        margin-bottom: 24px;
+    }
+    .modal {
+        overflow-y: auto;
+        padding: 0 16px;
+        align-items: flex-start;
+        padding-top: 56px;
+        padding-bottom: 100px;
+    }
+    .modal__block {
+        margin-top: 0;
+        padding-top: 32px;
+    }
+    .modal__close {
+        right: 50%;
+        transform: translateX(50%);
+    }
+    .modal__block h3 {
+        font-size: 28px;
+        line-height: 38px;
+        margin-bottom: 24px;
+    }
+    .modal__content {
+        padding: 0 16px;
+    }
+    .modal__content input {
+        height: 48px;
+        font-size: 16px;
+        line-height: 120%;
+        margin-bottom: 16px;
+    }
+    .modal__secret .secret {
+        height: 48px;
+    }
+    .modal__btn2 {
+        padding: 24px 0;
+        font-size: 18px;
+        line-height: 25px;
+    }
 }
 @media screen and (min-width: 768px) {
     .catalog_menu__top {
@@ -674,6 +720,13 @@
         transition: all.3s ease;
     }
     .catalog_menu__li ul li a:hover {
+        color: #00C165;
+    }
+    .catalog_menu__all {
+        display: block;
+        transition: all.3s ease;
+    }
+    .catalog_menu__all:hover {
         color: #00C165;
     }
 }

@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="font-awesome/css/all.min.css">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick-theme.css">
+    <link rel="stylesheet" href="slick-1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <title></title>
+</head>
+<body>
+    <!-- Header -->
+    <div class="admin_header">
+        <div class="admin_header_fixed">
+            <div class="container">
+                <div class="admin_header_box">
+                    <a href="#" class="back">
+                        <img src="img/admin-back.svg" alt="">
+                        <p>Вернуться на сайт</p>
+                    </a>
+                    <ul class="admin_header__nav">
+                        <li>
+                            <a href="#">Страницы</a>
+                        </li>
+                        <li>
+                            <a href="#">Объявления</a>
+                        </li>
+                        <li>
+                            <a href="#">Пользователи</a>
+                        </li>
+                        <li>
+                            <a class="active" href="#">Баннера</a>
+                        </li>
+                    </ul>
+                    <div class="admin_header_right">
+                        <a href="#" class="option">
+                            <img src="img/admin-option.svg" alt="">
+                            <p>Настройки</p>
+                        </a>
+                        <a href="#" class="exit">
+                            <img src="img/admin-exit.svg" alt="">
+                            <p>Выйти</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main -->
+    <main class="main">
+        <div class="admin_panel">
+            <div class="container">
+                <div class="admin_crumbs">
+                    <a href="#">Главная</a>
+                    <p>|</p>
+                    <p>Баннера</p>
+                </div>
+                <div class="admin_content">
+                    <div class="admin__title">
+                        <h2>Баннера</h2>
+                        <a class="btn" href="#">Добавить баннер</a>
+                    </div>
+                    <div class="admin_banner_tab">
+                        <button class="active" id="ads-all">Все 8</button>
+                        <button id="ads-active">Активные 4</button>
+                        <button id="ads-examination">На проверке 2</button>
+                        <button id="ads-archive">Архивные 2</button>
+                    </div>
+                    <div class="admin_banner_tab__block active">
+                        <div class="admin_banner_title">
+                            <div class="id">
+                                <h4>ID</h4>
+                            </div>
+                            <div class="categore">
+                                <h4>Категория</h4>
+                            </div>
+                            <div class="photo">
+                                <h4>Изображение</h4>
+                            </div>
+                            <div class="status">
+                                <h4>Статус</h4>
+                            </div>
+                        </div>
+                        <div class="admin_banner_item">
+                            <div class="id">
+                                <p>8</p>
+                            </div>
+                            <div class="categore">
+                                <p>Основной</p>
+                                <span>1280х350</span>
+                            </div>
+                            <div class="photo">
+                                <div class="img">
+                                    <img src="img/banner.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="status">
+                                <p class="active">Активный</p>
+                            </div>
+                            <div class="right">
+                                <a href="#" class="change">
+                                    <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 4H11V6H0V4ZM0 2H11V0H0V2ZM0 10H7V8H0V10ZM15.01 6.87L15.72 6.16C16.11 5.77 16.74 5.77 17.13 6.16L17.84 6.87C18.23 7.26 18.23 7.89 17.84 8.28L17.13 8.99L15.01 6.87ZM14.3 7.58L9 12.88V15H11.12L16.42 9.7L14.3 7.58Z" fill="#333333"/>
+                                    </svg>                                    
+                                    <p>Редактировать</p>
+                                </a>
+                                <a href="#" class="delete">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="#8C8C8C"/>
+                                    </svg>
+                                    <p>Удалить</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="admin_banner_item">
+                            <div class="id">
+                                <p>7</p>
+                            </div>
+                            <div class="categore">
+                                <p>Основной</p>
+                                <span>1280х350</span>
+                            </div>
+                            <div class="photo">
+                                <div class="img">
+                                    <img src="img/banner.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="status">
+                                <p class="active">Активный</p>
+                            </div>
+                            <div class="right">
+                                <a href="#" class="change">
+                                    <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 4H11V6H0V4ZM0 2H11V0H0V2ZM0 10H7V8H0V10ZM15.01 6.87L15.72 6.16C16.11 5.77 16.74 5.77 17.13 6.16L17.84 6.87C18.23 7.26 18.23 7.89 17.84 8.28L17.13 8.99L15.01 6.87ZM14.3 7.58L9 12.88V15H11.12L16.42 9.7L14.3 7.58Z" fill="#333333"/>
+                                    </svg>                                    
+                                    <p>Редактировать</p>
+                                </a>
+                                <a href="#" class="delete">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="#8C8C8C"/>
+                                    </svg>
+                                    <p>Удалить</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="admin_banner_item">
+                            <div class="id">
+                                <p>6</p>
+                            </div>
+                            <div class="categore">
+                                <p>Основной</p>
+                                <span>1280х350</span>
+                            </div>
+                            <div class="photo">
+                                <div class="img">
+                                    <img src="img/banner.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="status">
+                                <p class="active">Активный</p>
+                            </div>
+                            <div class="right">
+                                <a href="#" class="change">
+                                    <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 4H11V6H0V4ZM0 2H11V0H0V2ZM0 10H7V8H0V10ZM15.01 6.87L15.72 6.16C16.11 5.77 16.74 5.77 17.13 6.16L17.84 6.87C18.23 7.26 18.23 7.89 17.84 8.28L17.13 8.99L15.01 6.87ZM14.3 7.58L9 12.88V15H11.12L16.42 9.7L14.3 7.58Z" fill="#333333"/>
+                                    </svg>                                    
+                                    <p>Редактировать</p>
+                                </a>
+                                <a href="#" class="delete">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="#8C8C8C"/>
+                                    </svg>
+                                    <p>Удалить</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="admin_banner_item">
+                            <div class="id">
+                                <p>5</p>
+                            </div>
+                            <div class="categore">
+                                <p>Основной</p>
+                                <span>1280х350</span>
+                            </div>
+                            <div class="photo">
+                                <div class="img">
+                                    <img src="img/banner.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="status">
+                                <p class="active active2">В очереди</p>
+                            </div>
+                            <div class="right">
+                                <a href="#" class="change">
+                                    <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 4H11V6H0V4ZM0 2H11V0H0V2ZM0 10H7V8H0V10ZM15.01 6.87L15.72 6.16C16.11 5.77 16.74 5.77 17.13 6.16L17.84 6.87C18.23 7.26 18.23 7.89 17.84 8.28L17.13 8.99L15.01 6.87ZM14.3 7.58L9 12.88V15H11.12L16.42 9.7L14.3 7.58Z" fill="#333333"/>
+                                    </svg>                                    
+                                    <p>Редактировать</p>
+                                </a>
+                                <a href="#" class="delete">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="#8C8C8C"/>
+                                    </svg>
+                                    <p>Удалить</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="admin_banner_item archival">
+                            <div class="id">
+                                <p>4</p>
+                            </div>
+                            <div class="categore">
+                                <p>Основной</p>
+                                <span>1280х350</span>
+                            </div>
+                            <div class="photo">
+                                <div class="img">
+                                    <img src="img/banner.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="status">
+                                <p class="active">Архивный</p>
+                            </div>
+                            <div class="right">
+                                <a href="#" class="change">
+                                    <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 4H11V6H0V4ZM0 2H11V0H0V2ZM0 10H7V8H0V10ZM15.01 6.87L15.72 6.16C16.11 5.77 16.74 5.77 17.13 6.16L17.84 6.87C18.23 7.26 18.23 7.89 17.84 8.28L17.13 8.99L15.01 6.87ZM14.3 7.58L9 12.88V15H11.12L16.42 9.7L14.3 7.58Z" fill="#333333"/>
+                                    </svg>                                    
+                                    <p>Редактировать</p>
+                                </a>
+                                <a href="#" class="delete">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="#8C8C8C"/>
+                                    </svg>
+                                    <p>Удалить</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="admin_banner_item archival">
+                            <div class="id">
+                                <p>3</p>
+                            </div>
+                            <div class="categore">
+                                <p>Основной</p>
+                                <span>1280х350</span>
+                            </div>
+                            <div class="photo">
+                                <div class="img">
+                                    <img src="img/banner.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="status">
+                                <p class="active">Архивный</p>
+                            </div>
+                            <div class="right">
+                                <a href="#" class="change">
+                                    <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 4H11V6H0V4ZM0 2H11V0H0V2ZM0 10H7V8H0V10ZM15.01 6.87L15.72 6.16C16.11 5.77 16.74 5.77 17.13 6.16L17.84 6.87C18.23 7.26 18.23 7.89 17.84 8.28L17.13 8.99L15.01 6.87ZM14.3 7.58L9 12.88V15H11.12L16.42 9.7L14.3 7.58Z" fill="#333333"/>
+                                    </svg>                                    
+                                    <p>Редактировать</p>
+                                </a>
+                                <a href="#" class="delete">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="#8C8C8C"/>
+                                    </svg>
+                                    <p>Удалить</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="admin_banner_item archival">
+                            <div class="id">
+                                <p>2</p>
+                            </div>
+                            <div class="categore">
+                                <p>Основной</p>
+                                <span>1280х350</span>
+                            </div>
+                            <div class="photo">
+                                <div class="img">
+                                    <img src="img/banner.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="status">
+                                <p class="active">Архивный</p>
+                            </div>
+                            <div class="right">
+                                <a href="#" class="change">
+                                    <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 4H11V6H0V4ZM0 2H11V0H0V2ZM0 10H7V8H0V10ZM15.01 6.87L15.72 6.16C16.11 5.77 16.74 5.77 17.13 6.16L17.84 6.87C18.23 7.26 18.23 7.89 17.84 8.28L17.13 8.99L15.01 6.87ZM14.3 7.58L9 12.88V15H11.12L16.42 9.7L14.3 7.58Z" fill="#333333"/>
+                                    </svg>                                    
+                                    <p>Редактировать</p>
+                                </a>
+                                <a href="#" class="delete">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="#8C8C8C"/>
+                                    </svg>
+                                    <p>Удалить</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="admin_banner_item archival">
+                            <div class="id">
+                                <p>1</p>
+                            </div>
+                            <div class="categore">
+                                <p>Основной</p>
+                                <span>1280х350</span>
+                            </div>
+                            <div class="photo">
+                                <div class="img">
+                                    <img src="img/banner.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="status">
+                                <p class="active">Архивный</p>
+                            </div>
+                            <div class="right">
+                                <a href="#" class="change">
+                                    <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 4H11V6H0V4ZM0 2H11V0H0V2ZM0 10H7V8H0V10ZM15.01 6.87L15.72 6.16C16.11 5.77 16.74 5.77 17.13 6.16L17.84 6.87C18.23 7.26 18.23 7.89 17.84 8.28L17.13 8.99L15.01 6.87ZM14.3 7.58L9 12.88V15H11.12L16.42 9.7L14.3 7.58Z" fill="#333333"/>
+                                    </svg>                                    
+                                    <p>Редактировать</p>
+                                </a>
+                                <a href="#" class="delete">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="#8C8C8C"/>
+                                    </svg>
+                                    <p>Удалить</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="admin_banner_tab__block">
+                        <div class="admin_banner_title">
+                            <div class="id">
+                                <h4>ID</h4>
+                            </div>
+                            <div class="categore">
+                                <h4>Категория</h4>
+                            </div>
+                            <div class="photo">
+                                <h4>Изображение</h4>
+                            </div>
+                            <div class="status">
+                                <h4>Статус</h4>
+                            </div>
+                        </div>
+                        <div class="admin_banner_item archival">
+                            <div class="id">
+                                <p>4</p>
+                            </div>
+                            <div class="categore">
+                                <p>Основной</p>
+                                <span>1280х350</span>
+                            </div>
+                            <div class="photo">
+                                <div class="img">
+                                    <img src="img/banner.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="status">
+                                <p class="active">Архивный</p>
+                            </div>
+                            <div class="right">
+                                <a href="#" class="change">
+                                    <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 4H11V6H0V4ZM0 2H11V0H0V2ZM0 10H7V8H0V10ZM15.01 6.87L15.72 6.16C16.11 5.77 16.74 5.77 17.13 6.16L17.84 6.87C18.23 7.26 18.23 7.89 17.84 8.28L17.13 8.99L15.01 6.87ZM14.3 7.58L9 12.88V15H11.12L16.42 9.7L14.3 7.58Z" fill="#333333"/>
+                                    </svg>                                    
+                                    <p>Редактировать</p>
+                                </a>
+                                <a href="#" class="delete">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="#8C8C8C"/>
+                                    </svg>
+                                    <p>Удалить</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="admin_banner_item archival">
+                            <div class="id">
+                                <p>3</p>
+                            </div>
+                            <div class="categore">
+                                <p>Основной</p>
+                                <span>1280х350</span>
+                            </div>
+                            <div class="photo">
+                                <div class="img">
+                                    <img src="img/banner.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="status">
+                                <p class="active">Архивный</p>
+                            </div>
+                            <div class="right">
+                                <a href="#" class="change">
+                                    <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 4H11V6H0V4ZM0 2H11V0H0V2ZM0 10H7V8H0V10ZM15.01 6.87L15.72 6.16C16.11 5.77 16.74 5.77 17.13 6.16L17.84 6.87C18.23 7.26 18.23 7.89 17.84 8.28L17.13 8.99L15.01 6.87ZM14.3 7.58L9 12.88V15H11.12L16.42 9.7L14.3 7.58Z" fill="#333333"/>
+                                    </svg>                                    
+                                    <p>Редактировать</p>
+                                </a>
+                                <a href="#" class="delete">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="#8C8C8C"/>
+                                    </svg>
+                                    <p>Удалить</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="admin_banner_item archival">
+                            <div class="id">
+                                <p>2</p>
+                            </div>
+                            <div class="categore">
+                                <p>Основной</p>
+                                <span>1280х350</span>
+                            </div>
+                            <div class="photo">
+                                <div class="img">
+                                    <img src="img/banner.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="status">
+                                <p class="active">Архивный</p>
+                            </div>
+                            <div class="right">
+                                <a href="#" class="change">
+                                    <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 4H11V6H0V4ZM0 2H11V0H0V2ZM0 10H7V8H0V10ZM15.01 6.87L15.72 6.16C16.11 5.77 16.74 5.77 17.13 6.16L17.84 6.87C18.23 7.26 18.23 7.89 17.84 8.28L17.13 8.99L15.01 6.87ZM14.3 7.58L9 12.88V15H11.12L16.42 9.7L14.3 7.58Z" fill="#333333"/>
+                                    </svg>                                    
+                                    <p>Редактировать</p>
+                                </a>
+                                <a href="#" class="delete">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="#8C8C8C"/>
+                                    </svg>
+                                    <p>Удалить</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="admin_banner_item archival">
+                            <div class="id">
+                                <p>1</p>
+                            </div>
+                            <div class="categore">
+                                <p>Основной</p>
+                                <span>1280х350</span>
+                            </div>
+                            <div class="photo">
+                                <div class="img">
+                                    <img src="img/banner.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="status">
+                                <p class="active">Архивный</p>
+                            </div>
+                            <div class="right">
+                                <a href="#" class="change">
+                                    <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 4H11V6H0V4ZM0 2H11V0H0V2ZM0 10H7V8H0V10ZM15.01 6.87L15.72 6.16C16.11 5.77 16.74 5.77 17.13 6.16L17.84 6.87C18.23 7.26 18.23 7.89 17.84 8.28L17.13 8.99L15.01 6.87ZM14.3 7.58L9 12.88V15H11.12L16.42 9.7L14.3 7.58Z" fill="#333333"/>
+                                    </svg>                                    
+                                    <p>Редактировать</p>
+                                </a>
+                                <a href="#" class="delete">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="#8C8C8C"/>
+                                    </svg>
+                                    <p>Удалить</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="admin_banner_tab__block">
+                        <div class="admin_banner_title">
+                            <div class="id">
+                                <h4>ID</h4>
+                            </div>
+                            <div class="categore">
+                                <h4>Категория</h4>
+                            </div>
+                            <div class="photo">
+                                <h4>Изображение</h4>
+                            </div>
+                            <div class="status">
+                                <h4>Статус</h4>
+                            </div>
+                        </div>
+                        <div class="admin_banner_item archival">
+                            <div class="id">
+                                <p>2</p>
+                            </div>
+                            <div class="categore">
+                                <p>Основной</p>
+                                <span>1280х350</span>
+                            </div>
+                            <div class="photo">
+                                <div class="img">
+                                    <img src="img/banner.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="status">
+                                <p class="active">Архивный</p>
+                            </div>
+                            <div class="right">
+                                <a href="#" class="change">
+                                    <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 4H11V6H0V4ZM0 2H11V0H0V2ZM0 10H7V8H0V10ZM15.01 6.87L15.72 6.16C16.11 5.77 16.74 5.77 17.13 6.16L17.84 6.87C18.23 7.26 18.23 7.89 17.84 8.28L17.13 8.99L15.01 6.87ZM14.3 7.58L9 12.88V15H11.12L16.42 9.7L14.3 7.58Z" fill="#333333"/>
+                                    </svg>                                    
+                                    <p>Редактировать</p>
+                                </a>
+                                <a href="#" class="delete">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="#8C8C8C"/>
+                                    </svg>
+                                    <p>Удалить</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="admin_banner_item archival">
+                            <div class="id">
+                                <p>1</p>
+                            </div>
+                            <div class="categore">
+                                <p>Основной</p>
+                                <span>1280х350</span>
+                            </div>
+                            <div class="photo">
+                                <div class="img">
+                                    <img src="img/banner.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="status">
+                                <p class="active">Архивный</p>
+                            </div>
+                            <div class="right">
+                                <a href="#" class="change">
+                                    <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 4H11V6H0V4ZM0 2H11V0H0V2ZM0 10H7V8H0V10ZM15.01 6.87L15.72 6.16C16.11 5.77 16.74 5.77 17.13 6.16L17.84 6.87C18.23 7.26 18.23 7.89 17.84 8.28L17.13 8.99L15.01 6.87ZM14.3 7.58L9 12.88V15H11.12L16.42 9.7L14.3 7.58Z" fill="#333333"/>
+                                    </svg>                                    
+                                    <p>Редактировать</p>
+                                </a>
+                                <a href="#" class="delete">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="#8C8C8C"/>
+                                    </svg>
+                                    <p>Удалить</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="admin_banner_tab__block">
+                        <div class="admin_banner_title">
+                            <div class="id">
+                                <h4>ID</h4>
+                            </div>
+                            <div class="categore">
+                                <h4>Категория</h4>
+                            </div>
+                            <div class="photo">
+                                <h4>Изображение</h4>
+                            </div>
+                            <div class="status">
+                                <h4>Статус</h4>
+                            </div>
+                        </div>
+                        <div class="admin_banner_item archival">
+                            <div class="id">
+                                <p>2</p>
+                            </div>
+                            <div class="categore">
+                                <p>Основной</p>
+                                <span>1280х350</span>
+                            </div>
+                            <div class="photo">
+                                <div class="img">
+                                    <img src="img/banner.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="status">
+                                <p class="active">Архивный</p>
+                            </div>
+                            <div class="right">
+                                <a href="#" class="change">
+                                    <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 4H11V6H0V4ZM0 2H11V0H0V2ZM0 10H7V8H0V10ZM15.01 6.87L15.72 6.16C16.11 5.77 16.74 5.77 17.13 6.16L17.84 6.87C18.23 7.26 18.23 7.89 17.84 8.28L17.13 8.99L15.01 6.87ZM14.3 7.58L9 12.88V15H11.12L16.42 9.7L14.3 7.58Z" fill="#333333"/>
+                                    </svg>                                    
+                                    <p>Редактировать</p>
+                                </a>
+                                <a href="#" class="delete">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="#8C8C8C"/>
+                                    </svg>
+                                    <p>Удалить</p>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="admin_banner_item archival">
+                            <div class="id">
+                                <p>1</p>
+                            </div>
+                            <div class="categore">
+                                <p>Основной</p>
+                                <span>1280х350</span>
+                            </div>
+                            <div class="photo">
+                                <div class="img">
+                                    <img src="img/banner.jpg" alt="">
+                                </div>
+                            </div>
+                            <div class="status">
+                                <p class="active">Архивный</p>
+                            </div>
+                            <div class="right">
+                                <a href="#" class="change">
+                                    <svg width="19" height="15" viewBox="0 0 19 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M0 4H11V6H0V4ZM0 2H11V0H0V2ZM0 10H7V8H0V10ZM15.01 6.87L15.72 6.16C16.11 5.77 16.74 5.77 17.13 6.16L17.84 6.87C18.23 7.26 18.23 7.89 17.84 8.28L17.13 8.99L15.01 6.87ZM14.3 7.58L9 12.88V15H11.12L16.42 9.7L14.3 7.58Z" fill="#333333"/>
+                                    </svg>                                    
+                                    <p>Редактировать</p>
+                                </a>
+                                <a href="#" class="delete">
+                                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="#8C8C8C"/>
+                                    </svg>
+                                    <p>Удалить</p>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="admin_footer">
+                <div class="container">
+                    <div class="admin_footer__box">
+                        <div class="left">
+                            <p>Kontur CMS v.1.0</p>
+                        </div>
+                        <div class="center">
+                            <img src="img/Kontur-silver.svg" alt="">
+                        </div>
+                        <div class="right">
+                            <p>Служба поддержки:  (383) 255-33-33</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/SmoothScroll.js"></script>
+    <script src="slick-1.8.1/slick/slick.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        const adsBtn = document.querySelectorAll('.admin_banner_tab button');
+        const adsBlock = document.querySelectorAll('.admin_banner_tab__block');
+        const adsAll = document.querySelector('#ads-all');
+        const adsActive = document.querySelector('#ads-active');
+        const adsExamination = document.querySelector('#ads-examination');
+        const adsArchive = document.querySelector('#ads-archive');
+
+        adsAll.addEventListener('click', function() {
+            for(let i = 0; i < adsBtn.length; i++) {
+                adsBtn[i].classList.remove('active');
+                console.log(adsBtn[i]);
+            };
+            for(let i = 0; i < adsBlock.length; i++) {
+                adsBlock[i].classList.remove('active');
+                adsBlock[0].classList.add('active');
+            };
+            this.classList.add('active');
+        });
+
+        adsActive.addEventListener('click', function() {
+            for(let i = 0; i < adsBtn.length; i++) {
+                adsBtn[i].classList.remove('active');
+                console.log(adsBtn[i]);
+            };
+            for(let i = 0; i < adsBlock.length; i++) {
+                adsBlock[i].classList.remove('active');
+                adsBlock[1].classList.add('active');
+            };
+            this.classList.add('active');
+        });
+
+        adsExamination.addEventListener('click', function() {
+            for(let i = 0; i < adsBtn.length; i++) {
+                adsBtn[i].classList.remove('active');
+                console.log(adsBtn[i]);
+            };
+            for(let i = 0; i < adsBlock.length; i++) {
+                adsBlock[i].classList.remove('active');
+                adsBlock[2].classList.add('active');
+            };
+            this.classList.add('active');
+        });
+
+        adsArchive.addEventListener('click', function() {
+            for(let i = 0; i < adsBtn.length; i++) {
+                adsBtn[i].classList.remove('active');
+                console.log(adsBtn[i]);
+            };
+            for(let i = 0; i < adsBlock.length; i++) {
+                adsBlock[i].classList.remove('active');
+                adsBlock[3].classList.add('active');
+            };
+            this.classList.add('active');
+        });
+    </script>
+</body>
+</html>
