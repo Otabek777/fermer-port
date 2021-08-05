@@ -417,6 +417,8 @@ ul, ol {
     transform: translateY(-11px); }
   .menu__items .user-btn p {
     margin-top: 3px; }
+  .menu__items .user-btn.active svg path {
+    fill: #00C165 !important; }
 
 .modal {
   display: none;
@@ -2211,32 +2213,32 @@ section h2.mobie {
       position: relative; }
     .admin_ads_select .select select:focus {
       border: 1px solid #00C165; }
-    .admin_ads_select .select .select::after {
-      content: "";
-      width: 20px;
-      height: 50px;
-      background-color: #fff;
-      border-radius: 5px;
-      position: absolute;
-      right: 1px;
-      top: 1px; }
-    .admin_ads_select .select .select-icon {
-      width: 10px;
-      height: 5px;
-      background: url(../img/select.svg) no-repeat center/cover;
-      position: absolute;
-      top: 50%;
-      right: 17px;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-      z-index: 1; }
-    .admin_ads_select .select select:focus + .select-icon {
-      -webkit-transform: translateY(-50%) rotate(-180deg);
-      -ms-transform: translateY(-50%) rotate(-180deg);
-      transform: translateY(-50%) rotate(-180deg); }
   .admin_ads_select .select:nth-child(3) {
     margin-right: 0; }
+  .admin_ads_select .select::after {
+    content: "";
+    width: 20px;
+    height: 50px;
+    background-color: #fff;
+    border-radius: 5px;
+    position: absolute;
+    right: 1px;
+    top: 1px; }
+  .admin_ads_select .select-icon {
+    width: 10px;
+    height: 5px;
+    background: url(../img/select.svg) no-repeat center/cover;
+    position: absolute;
+    top: 50%;
+    right: 17px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 1; }
+  .admin_ads_select select:focus + .select-icon {
+    -webkit-transform: translateY(-50%) rotate(-180deg);
+    -ms-transform: translateY(-50%) rotate(-180deg);
+    transform: translateY(-50%) rotate(-180deg); }
   .admin_ads_select .modal__check {
     margin-bottom: 24px;
     margin-right: 34px; }
@@ -2374,6 +2376,10 @@ section h2.mobie {
     color: #FFFFFF;
     padding: 0px 12px;
     margin-bottom: 16px; }
+  .admin_ads .center .revisions {
+    background: #4A9DFF; }
+  .admin_ads .center .archival {
+    background: #8C8C8C; }
   .admin_ads .center .examination {
     background: #4A9DFF; }
   .admin_ads .center .archive {
@@ -2944,8 +2950,10 @@ section h2.mobie {
       font-size: 14px;
       line-height: 19px;
       color: #FFFFFF; }
-    .admin_banner_item .status .active2 {
+    .admin_banner_item .status .turn {
       background: #4A9DFF; }
+    .admin_banner_item .status .archival {
+      background: #8C8C8C; }
   .admin_banner_item .right {
     margin-left: auto;
     padding-top: 6px; }
@@ -3222,3 +3230,12 @@ section h2.mobie {
 
 .pass_item:focus + .pass_box {
   display: block; }
+
+option {
+  font-family: 'Roboto', sans-serif;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 120%;
+  color: #333333;
+  width: 100%;
+  background: #FFFFFF; }

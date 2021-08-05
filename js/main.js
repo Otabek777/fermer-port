@@ -47,11 +47,12 @@ const modalClose = document.querySelectorAll('.modal__close');
 const modal = document.querySelectorAll('.modal');
 for(let i = 0; i < modalClose.length; i++) {
     modalClose[i].addEventListener('click', function() {
+        document.querySelector('.user-btn').classList.remove('active');
         for(m = 0; m < modal.length; m++) {
-            modal[m].classList.remove('active')
-        }
+            modal[m].classList.remove('active');
+        };
     });
-}
+};
 
 document.querySelector('#open-modal').addEventListener('click', function() {
     document.querySelector('#auth').classList.add('active');
@@ -64,3 +65,8 @@ document.querySelector('#open-modal-auth').addEventListener('click', function() 
     document.querySelector('#auth').classList.add('active');
     document.querySelector('#reg').classList.remove('active');
 });
+
+document.querySelector('.user-btn').addEventListener('click', function() {
+    this.classList.toggle('active');
+    document.querySelector('#auth').classList.toggle('active');
+})

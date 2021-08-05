@@ -398,6 +398,11 @@ ul,ol {
             margin-top: 3px;
         }
     }
+    .user-btn.active {
+        svg path {
+            fill: #00C165 !important;
+        }
+    }
 }
 
 // modal
@@ -2169,32 +2174,32 @@ section {
         select:focus {
             border: 1px solid #00C165;
         }
-        .select::after {
-            content: "";
-            width: 20px;
-            height: 50px;
-            background-color: #fff;
-            border-radius: 5px;
-            position: absolute;
-            right: 1px;
-            top: 1px;
-        }
-        .select-icon {
-            width: 10px;
-            height: 5px;
-            background: url(../img/select.svg) no-repeat center / cover;
-            position: absolute;
-            top: 50%;
-            right: 17px;
-            transform: translateY(-50%);
-            z-index: 1;
-        }
-        select:focus + .select-icon {
-            transform: translateY(-50%) rotate(-180deg);
-        }
     }
     .select:nth-child(3) {
         margin-right: 0;
+    }
+    .select::after {
+        content: "";
+        width: 20px;
+        height: 50px;
+        background-color: #fff;
+        border-radius: 5px;
+        position: absolute;
+        right: 1px;
+        top: 1px;
+    }
+    .select-icon {
+        width: 10px;
+        height: 5px;
+        background: url(../img/select.svg) no-repeat center / cover;
+        position: absolute;
+        top: 50%;
+        right: 17px;
+        transform: translateY(-50%);
+        z-index: 1;
+    }
+    select:focus + .select-icon {
+        transform: translateY(-50%) rotate(-180deg);
     }
     .modal__check {
         margin-bottom: 24px;
@@ -2318,6 +2323,12 @@ section {
             color: #FFFFFF;
             padding: 0px 12px;
             margin-bottom: 16px;
+        }
+        .revisions {
+            background: #4A9DFF;
+        }
+        .archival {
+            background: #8C8C8C;
         }
         .examination {
             background: #4A9DFF;
@@ -2921,8 +2932,11 @@ section {
             line-height: 19px;
             color: #FFFFFF;
         }
-        .active2 {
+        .turn {
             background: #4A9DFF;
+        }
+        .archival {
+            background: #8C8C8C;
         }
     }
     .right {
@@ -3205,4 +3219,14 @@ section {
 }
 .pass_item:focus + .pass_box {
     display: block;
+}
+
+option {
+    font-family: 'Roboto', sans-serif;
+    font-weight: normal;
+    font-size: 19px;
+    line-height: 120%;
+    color: #333333;
+    width: 100%;
+    background: #FFFFFF;
 }

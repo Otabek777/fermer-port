@@ -251,11 +251,11 @@
         margin-bottom: 60px;
     }
     .suggestions h2 {
-        padding: 0 8px;
+        padding: 0 7px;
     }
     .suggestions .container {
         padding: 0;
-        padding-left: 8px;
+        padding-left: 9px;
         overflow: hidden;
     }
     .suggestions__item {
@@ -264,7 +264,7 @@
     }
     .suggestions__wrap {
         padding-right: 0px;
-        padding-left: 8px;
+        padding-left: 9px;
     }
     .suggestions__item .img {
         min-height: 115px;
@@ -467,6 +467,9 @@
         font-size: 16px;
         line-height: 120%;
     }
+    .user-panel-add__box .right .select::after {
+        height: 46px;
+    }
     .user__box {
         flex-direction: column;
     }
@@ -620,6 +623,7 @@
         margin-bottom: 8px;
     }
     .user__ads p.p-mobile {
+        font-family: 'Roboto', sans-serif;
         display: block;
         width: 100%;
         font-weight: normal;
