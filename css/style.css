@@ -1230,7 +1230,8 @@ section h2.mobie {
   margin-bottom: 32px; }
   .catalog__select .select {
     width: 300px;
-    margin-right: 64px; }
+    margin-right: 64px;
+    position: relative; }
     .catalog__select .select p {
       font-weight: normal;
       font-size: 19px;
@@ -1244,6 +1245,32 @@ section h2.mobie {
       border: 1px solid #DCDCDC;
       border-radius: 8px;
       padding: 0 16px; }
+    .catalog__select .select select:focus {
+      border: 1px solid #00C165; }
+  .catalog__select .select::after {
+    content: "";
+    width: 20px;
+    height: 42px;
+    background-color: #fff;
+    border-radius: 9px;
+    position: absolute;
+    right: 1px;
+    bottom: 1px; }
+  .catalog__select .select-icon {
+    width: 10px;
+    height: 5px;
+    background: url(../img/select.svg) no-repeat center/cover;
+    position: absolute;
+    bottom: 18px;
+    right: 17px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    z-index: 1; }
+  .catalog__select select:focus + .select-icon {
+    -webkit-transform: translateY(-50%) rotate(-180deg);
+    -ms-transform: translateY(-50%) rotate(-180deg);
+    transform: translateY(-50%) rotate(-180deg); }
 
 .next {
   display: -webkit-box;
@@ -1724,6 +1751,9 @@ section h2.mobie {
     .user__ads .ads-edit span:nth-child(3) {
       margin-right: 0; }
 
+.user__ads h5.h5-mobile, .user__ads p.p-mobile {
+  display: none; }
+
 .ads-edit.active .down {
   display: block; }
 
@@ -1774,10 +1804,7 @@ section h2.mobie {
       border: 1px solid #00C165; }
     .user-panel-add__box .right .select {
       width: 100%;
-      background: #FFFFFF;
-      border: 1px solid #DCDCDC;
-      border-radius: 4px;
-      padding-right: 16px; }
+      position: relative; }
     .user-panel-add__box .right select {
       font-family: 'Roboto', sans-serif;
       width: 100%;
@@ -1788,7 +1815,37 @@ section h2.mobie {
       color: #8C8C8C;
       padding: 0 16px;
       border: none;
-      background-color: transparent; }
+      background-color: transparent;
+      background: #FFFFFF;
+      border: 1px solid #DCDCDC;
+      border-radius: 4px;
+      position: relative; }
+    .user-panel-add__box .right select:focus {
+      border: 1px solid #00C165; }
+    .user-panel-add__box .right .select::after {
+      content: "";
+      width: 20px;
+      height: 50px;
+      background-color: #fff;
+      border-radius: 5px;
+      position: absolute;
+      right: 1px;
+      top: 1px; }
+    .user-panel-add__box .right .select-icon {
+      width: 10px;
+      height: 5px;
+      background: url(../img/select.svg) no-repeat center/cover;
+      position: absolute;
+      top: 50%;
+      right: 17px;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      z-index: 1; }
+    .user-panel-add__box .right select:focus + .select-icon {
+      -webkit-transform: translateY(-50%) rotate(-180deg);
+      -ms-transform: translateY(-50%) rotate(-180deg);
+      transform: translateY(-50%) rotate(-180deg); }
     .user-panel-add__box .right textarea {
       font-family: 'Roboto', sans-serif;
       width: 100%;
@@ -2134,11 +2191,8 @@ section h2.mobie {
   .admin_ads_select .select {
     margin-right: 18px;
     width: 355px;
-    background: #FFFFFF;
-    border: 1px solid #DCDCDC;
-    border-radius: 4px;
-    padding-right: 16px;
-    margin-bottom: 24px; }
+    margin-bottom: 24px;
+    position: relative; }
     .admin_ads_select .select select {
       width: 100%;
       height: 52px;
@@ -2150,7 +2204,37 @@ section h2.mobie {
       font-weight: normal;
       font-size: 19px;
       line-height: 120%;
-      color: #8C8C8C; }
+      color: #8C8C8C;
+      background: #FFFFFF;
+      border: 1px solid #DCDCDC;
+      border-radius: 4px;
+      position: relative; }
+    .admin_ads_select .select select:focus {
+      border: 1px solid #00C165; }
+    .admin_ads_select .select .select::after {
+      content: "";
+      width: 20px;
+      height: 50px;
+      background-color: #fff;
+      border-radius: 5px;
+      position: absolute;
+      right: 1px;
+      top: 1px; }
+    .admin_ads_select .select .select-icon {
+      width: 10px;
+      height: 5px;
+      background: url(../img/select.svg) no-repeat center/cover;
+      position: absolute;
+      top: 50%;
+      right: 17px;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      z-index: 1; }
+    .admin_ads_select .select select:focus + .select-icon {
+      -webkit-transform: translateY(-50%) rotate(-180deg);
+      -ms-transform: translateY(-50%) rotate(-180deg);
+      transform: translateY(-50%) rotate(-180deg); }
   .admin_ads_select .select:nth-child(3) {
     margin-right: 0; }
   .admin_ads_select .modal__check {
@@ -2473,10 +2557,7 @@ section h2.mobie {
       border: 1px solid #00C165; }
     .admin_new_ads .input .select {
       width: 100%;
-      padding-right: 16px;
-      background: #FFFFFF;
-      border: 1px solid #DCDCDC;
-      border-radius: 4px; }
+      position: relative; }
     .admin_new_ads .input select {
       width: 100%;
       height: 52px;
@@ -2487,7 +2568,37 @@ section h2.mobie {
       color: #8C8C8C;
       padding: 0 16px;
       border: none;
-      background-color: transparent; }
+      background-color: transparent;
+      background: #FFFFFF;
+      border: 1px solid #DCDCDC;
+      border-radius: 4px;
+      position: relative; }
+    .admin_new_ads .input select:focus {
+      border: 1px solid #00C165; }
+    .admin_new_ads .input .select::after {
+      content: "";
+      width: 20px;
+      height: 50px;
+      background-color: #fff;
+      border-radius: 5px;
+      position: absolute;
+      right: 1px;
+      top: 1px; }
+    .admin_new_ads .input .select-icon {
+      width: 10px;
+      height: 5px;
+      background: url(../img/select.svg) no-repeat center/cover;
+      position: absolute;
+      top: 50%;
+      right: 17px;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      z-index: 1; }
+    .admin_new_ads .input select:focus + .select-icon {
+      -webkit-transform: translateY(-50%) rotate(-180deg);
+      -ms-transform: translateY(-50%) rotate(-180deg);
+      transform: translateY(-50%) rotate(-180deg); }
     .admin_new_ads .input textarea {
       width: 100%;
       min-width: 100%;
@@ -2922,10 +3033,7 @@ section h2.mobie {
       border: 1px solid #00C165; }
     .admin_banner__box .input .select {
       width: 100%;
-      background: #FFFFFF;
-      border: 1px solid #DCDCDC;
-      border-radius: 4px;
-      padding-right: 16px; }
+      position: relative; }
     .admin_banner__box .input select {
       width: 100%;
       border: none;
@@ -2936,7 +3044,36 @@ section h2.mobie {
       font-weight: normal;
       font-size: 19px;
       line-height: 120%;
-      color: #333333; }
+      color: #333333;
+      background: #FFFFFF;
+      border: 1px solid #DCDCDC;
+      border-radius: 4px; }
+    .admin_banner__box .input select:focus {
+      border: 1px solid #00C165; }
+    .admin_banner__box .input .select::after {
+      content: "";
+      width: 20px;
+      height: 50px;
+      background-color: #fff;
+      border-radius: 5px;
+      position: absolute;
+      right: 1px;
+      top: 1px; }
+    .admin_banner__box .input .select-icon {
+      width: 10px;
+      height: 5px;
+      background: url(../img/select.svg) no-repeat center/cover;
+      position: absolute;
+      top: 50%;
+      right: 17px;
+      -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+      transform: translateY(-50%);
+      z-index: 1; }
+    .admin_banner__box .input select:focus + .select-icon {
+      -webkit-transform: translateY(-50%) rotate(-180deg);
+      -ms-transform: translateY(-50%) rotate(-180deg);
+      transform: translateY(-50%) rotate(-180deg); }
   .admin_banner__box .date {
     display: -webkit-box;
     display: -ms-flexbox;

@@ -250,9 +250,12 @@
     .stock__box {
         margin-bottom: 60px;
     }
+    .suggestions h2 {
+        padding: 0 8px;
+    }
     .suggestions .container {
         padding: 0;
-        padding-left: 16px;
+        padding-left: 8px;
         overflow: hidden;
     }
     .suggestions__item {
@@ -578,6 +581,9 @@
     .user__ads .title {
         width: 100%;
     }
+    .user__ads .title .ads-btn2 {
+        margin-left: 106px;
+    }
     .user__ads .right {
         display: flex;
         flex-wrap: wrap;
@@ -597,11 +603,30 @@
         font-size: 18px;
         line-height: 25px;
         margin-bottom: 8px;
+        display: none;
     }
     .user__ads .title p {
         font-size: 16px;
         line-height: 120%;
         margin-bottom: 16px;
+        display: none;
+    }
+    .user__ads h5.h5-mobile {
+        display: block;
+        width: 100%;
+        font-weight: 600;
+        font-size: 18px;
+        line-height: 25px;
+        margin-bottom: 8px;
+    }
+    .user__ads p.p-mobile {
+        display: block;
+        width: 100%;
+        font-weight: normal;
+        font-size: 16px;
+        line-height: 120%;
+        color: #333333;
+        margin-bottom: 8px;
     }
     .user__ads .title .ads-btn {
         width: 100%;

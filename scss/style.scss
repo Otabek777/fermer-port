@@ -1181,6 +1181,7 @@ section {
     .select {
         width: 300px;
         margin-right: 64px;
+        position: relative;
         p {
             font-weight: normal;
             font-size: 19px;
@@ -1196,6 +1197,32 @@ section {
             border-radius: 8px;
             padding: 0 16px;
         }
+        select:focus {
+            border: 1px solid #00C165;
+        }
+    }
+    .select::after {
+        content: "";
+        width: 20px;
+        height: 42px;
+        background-color: #fff;
+        border-radius: 9px;
+        position: absolute;
+        right: 1px;
+        bottom: 1px;
+    }
+    .select-icon {
+        width: 10px;
+        height: 5px;
+        background: url(../img/select.svg) no-repeat center / cover;
+        position: absolute;
+        bottom: 18px;
+        right: 17px;
+        transform: translateY(-50%);
+        z-index: 1;
+    }
+    select:focus + .select-icon {
+        transform: translateY(-50%) rotate(-180deg);
     }
 }
 .next {
@@ -1678,6 +1705,9 @@ section {
         }
     }
 }
+.user__ads h5.h5-mobile, .user__ads p.p-mobile {
+    display: none;
+}
 .ads-edit.active .down {
     display: block;
 }
@@ -1732,10 +1762,8 @@ section {
         }
         .select {
             width: 100%;
-            background: #FFFFFF;
-            border: 1px solid #DCDCDC;
-            border-radius: 4px;
-            padding-right: 16px;
+            // padding-right: 16px;
+            position: relative;
         }
         select {
             font-family: 'Roboto', sans-serif;
@@ -1748,6 +1776,36 @@ section {
             padding: 0 16px;
             border: none;
             background-color: transparent;
+            background: #FFFFFF;
+            border: 1px solid #DCDCDC;
+            border-radius: 4px;
+            position: relative;
+        }
+        select:focus {
+            border: 1px solid #00C165;
+        }
+        .select::after {
+            content: "";
+            width: 20px;
+            height: 50px;
+            background-color: #fff;
+            border-radius: 5px;
+            position: absolute;
+            right: 1px;
+            top: 1px;
+        }
+        .select-icon {
+            width: 10px;
+            height: 5px;
+            background: url(../img/select.svg) no-repeat center / cover;
+            position: absolute;
+            top: 50%;
+            right: 17px;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+        select:focus + .select-icon {
+            transform: translateY(-50%) rotate(-180deg);
         }
         textarea {
             font-family: 'Roboto', sans-serif;
@@ -2088,11 +2146,9 @@ section {
     .select {
         margin-right: 18px;
         width: 355px;
-        background: #FFFFFF;
-        border: 1px solid #DCDCDC;
-        border-radius: 4px;
-        padding-right: 16px;
+        // padding-right: 16px;
         margin-bottom: 24px;
+        position: relative;
         select {
             width: 100%;
             height: 52px;
@@ -2105,6 +2161,36 @@ section {
             font-size: 19px;
             line-height: 120%;
             color: #8C8C8C;
+            background: #FFFFFF;
+            border: 1px solid #DCDCDC;
+            border-radius: 4px;
+            position: relative;
+        }
+        select:focus {
+            border: 1px solid #00C165;
+        }
+        .select::after {
+            content: "";
+            width: 20px;
+            height: 50px;
+            background-color: #fff;
+            border-radius: 5px;
+            position: absolute;
+            right: 1px;
+            top: 1px;
+        }
+        .select-icon {
+            width: 10px;
+            height: 5px;
+            background: url(../img/select.svg) no-repeat center / cover;
+            position: absolute;
+            top: 50%;
+            right: 17px;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+        select:focus + .select-icon {
+            transform: translateY(-50%) rotate(-180deg);
         }
     }
     .select:nth-child(3) {
@@ -2427,10 +2513,8 @@ section {
         }
         .select {
             width: 100%;
-            padding-right: 16px;
-            background: #FFFFFF;
-            border: 1px solid #DCDCDC;
-            border-radius: 4px;
+            // padding-right: 16px;
+            position: relative;
         }
         select {
             width: 100%;
@@ -2443,6 +2527,36 @@ section {
             padding: 0 16px;
             border: none;
             background-color: transparent;
+            background: #FFFFFF;
+            border: 1px solid #DCDCDC;
+            border-radius: 4px;
+            position: relative;
+        }
+        select:focus {
+            border: 1px solid #00C165;
+        }
+        .select::after {
+            content: "";
+            width: 20px;
+            height: 50px;
+            background-color: #fff;
+            border-radius: 5px;
+            position: absolute;
+            right: 1px;
+            top: 1px;
+        }
+        .select-icon {
+            width: 10px;
+            height: 5px;
+            background: url(../img/select.svg) no-repeat center / cover;
+            position: absolute;
+            top: 50%;
+            right: 17px;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+        select:focus + .select-icon {
+            transform: translateY(-50%) rotate(-180deg);
         }
         textarea {
             width: 100%;
@@ -2904,10 +3018,8 @@ section {
         }
         .select {
             width: 100%;
-            background: #FFFFFF;
-            border: 1px solid #DCDCDC;
-            border-radius: 4px;
-            padding-right: 16px;
+            // padding-right: 16px;
+            position: relative;
         }
         select {
             width: 100%;
@@ -2920,6 +3032,35 @@ section {
             font-size: 19px;
             line-height: 120%;
             color: #333333;
+            background: #FFFFFF;
+            border: 1px solid #DCDCDC;
+            border-radius: 4px;
+        }
+        select:focus {
+            border: 1px solid #00C165;
+        }
+        .select::after {
+            content: "";
+            width: 20px;
+            height: 50px;
+            background-color: #fff;
+            border-radius: 5px;
+            position: absolute;
+            right: 1px;
+            top: 1px;
+        }
+        .select-icon {
+            width: 10px;
+            height: 5px;
+            background: url(../img/select.svg) no-repeat center / cover;
+            position: absolute;
+            top: 50%;
+            right: 17px;
+            transform: translateY(-50%);
+            z-index: 1;
+        }
+        select:focus + .select-icon {
+            transform: translateY(-50%) rotate(-180deg);
         }
     }
     .date {
