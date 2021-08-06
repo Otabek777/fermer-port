@@ -70,3 +70,8 @@ document.querySelector('.user-btn').addEventListener('click', function() {
     this.classList.toggle('active');
     document.querySelector('#auth').classList.toggle('active');
 })
+
+document.querySelector('.header__burgir-menu').addEventListener('click', function() {
+    this.classList.toggle('active');
+    document.querySelector('.header__top').classList.toggle('active');
+});
